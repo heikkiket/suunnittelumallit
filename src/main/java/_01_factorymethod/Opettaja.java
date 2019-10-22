@@ -1,4 +1,4 @@
-package factorymethod;
+package _01_factorymethod;
 
 public class Opettaja extends AterioivaOtus {
 

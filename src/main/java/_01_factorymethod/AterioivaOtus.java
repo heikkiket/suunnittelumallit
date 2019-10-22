@@ -1,4 +1,4 @@
-package factorymethod;
+package _01_factorymethod;
 
 public abstract class AterioivaOtus {
 
@@ -8,6 +8,7 @@ public abstract class AterioivaOtus {
 
 
     public void aterioi(){
+	    System.out.println(this.getClass().getSimpleName() + " aterioi:");
         syö();
         juo();
     }
