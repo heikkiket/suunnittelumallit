@@ -21,11 +21,12 @@ public class Main {
 		Engineer jasper = new Engineer(new AdidasClothing());
 		jasper.listClothing();
 
+		String className = "T02_AbstractFactory.Clothings.Boss.BossClothing";
 		//jasper.setClothing(new BossClothing());
 		try {
 			
-			Clothing c = (Clothing) Class.forName("T02_AbstractFactory.Clothings.Boss.BossClothing").newInstance();
-			jasper.setClothing(c);
+			Clothing clothes = (Clothing) Class.forName(className).newInstance();
+			jasper.setClothing(clothes);
 		} catch (ClassNotFoundException ex) {
 			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
 		} catch (InstantiationException ex) {
